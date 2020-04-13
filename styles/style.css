@@ -38,6 +38,7 @@ table.university{
 	width:100%;
 	font-family: 'Afanan';
 	font-size:1.5em;
+	text-align:center;
 }
 
 ol, ul {
@@ -52,7 +53,7 @@ table,th,td {
 	text-align:center;
 	padding-top: 1.5em;
 	padding-bottom:1.5em;
-	
+
 }
 
 /*Font color class for when i want specific elements
