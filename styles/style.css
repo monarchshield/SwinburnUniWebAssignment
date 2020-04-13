@@ -37,6 +37,11 @@ in a product container */
 table.university{
 	width:100%;
 	font-family: 'Afanan';
+	font-size:1.5em;
+}
+
+ol, ul {
+	font-size: 1.25em;
 }
 
 table,th,td {
@@ -53,6 +58,12 @@ table,th,td {
 /*Font color class for when i want specific elements
   blue and what not */
 .fontcolorblue {
+	color: #1672A3;
+}
+
+/*Font color class for when i want specific elements
+  blue and what not */
+.fontcolorblack {
 	color: #1672A3;
 }
 
