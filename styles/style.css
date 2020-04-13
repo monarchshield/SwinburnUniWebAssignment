@@ -1,1 +1,63 @@
-yes
+/* Importing font types */
+@font-face{
+  font-family: 'Afanan';
+  src: url('fonts/Afanan.ttf');
+}
+
+/* Classes that will use fonts */
+.AfananText {
+	font-family: 'Afanan';
+}
+
+/* Bootstrap doesnt pad the top and bottom of rows and containers */
+.defaultcontainer {
+	padding-top:1.5em;
+	padding-bottom:1.5em;
+}
+
+
+/* For the heading of the products page 
+   As oer my wireframes */
+.productheadcontainer {
+	padding-top:1.5em;
+	padding-bottom:1.5em;
+	background-color: #1672A3;
+}
+
+/*
+This is for the content styles residing
+in a product container */
+.productcontent {
+	text-align:center;
+	padding-top: 1.5em;
+	padding-bottom:1.5em;
+	color:white;
+}
+
+table.university{
+	width:100%;
+	font-family: 'Afanan';
+}
+
+table,th,td {
+	border: 1px solid black;	
+}
+
+.aboutmetimetable {
+	text-align:center;
+	padding-top: 1.5em;
+	padding-bottom:1.5em;
+	
+}
+
+/*Font color class for when i want specific elements
+  blue and what not */
+.fontcolorblue {
+	color: #1672A3;
+}
+
+/* for breaking up the content im creating a new
+hr child class for styling */
+hr.productdivider {
+	 border: 4px solid #1672A3;
+}

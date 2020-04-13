@@ -1,0 +1,175 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/bootstrap.css">
+
+</head>
+
+<body>
+
+<!-- Initiatilising nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">PRODUCT</a>
+          </li>
+		  <li class="nav-item">
+			<img src="images/logonavbar.png" class="img-fluid" alt="Responsive image" style="width:50px;">
+		  </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="enquire.html">ENQUIRE</a>
+          </li>
+          <li class="nav-item dropdown">
+             <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!-- End Initiatilising navbar -->
+
+<!-- Initial content for webpage -->
+	<div class="container defaultcontainer">
+		<div class="row">
+			<div class="col-md-6 AfananText">
+				<section>
+					<h1> ENQUIREY</h1>
+					<h2>
+						HAVE SOMETHING YOUD LIKE TO SAY WELL THAN! 
+						FEEL FREE TO LODGE AN ENQUIREY!! WE WILL AIM TO GET 
+						BACK TO YOU ASAP SIMPLY FILL OUT ALL THE FIELDS AND HIT SUBMIT!
+					</h2>
+				</section>
+			</div>
+			
+			<div class="col-md-6">
+				
+				<!-- Form start -->
+				<form>
+				  <div class="form-row">
+					<div class="col">
+					  <label for="firstname">First Name</label>
+					  <input type="text" class="form-control" id="firstname" placeholder="First name">
+					</div>
+					<div class="col">
+					  <label for="lastname">Last Name</label>
+					  <input type="text" class="form-control" id="lastname" placeholder="Last name">
+					</div>
+				  </div>
+				  
+				   <div class="form-group">
+				    <label for="emailaddress">Email</label>
+					<input type="text" class="form-control" id="emailaddress" placeholder="Email">
+				  </div>
+				  
+				   <div class="form-group">
+					<label for="inputAddress">Address</label>
+					<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+				  </div>
+				  
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							 <label for="suburbtown">Surburb/Town</label>
+							<input type="text" class="form-control" id="suburbtown" placeholder="suburbtown">
+						</div>
+						<div class="form-group col-md-6">
+							 <label for="postcode">Postcode</label>
+							 <input type="text" class="form-control" id="postcode" placeholder="Postcode">
+						</div>
+						
+						<div class="form-group col-md-6">
+							<label for="state">State</label>
+							  <select id="state" class="form-control">
+								<option selected>Choose...</option>
+								<option>VIC</option>
+								<option>NSW</option>
+								<option>QLD</option>
+								<option>NT</option>
+								<option>SA</option>
+								<option>WA</option>
+							  </select>
+						</div>	
+					</div>
+					
+					<h4> Preferred contact </h4>
+					 <div class="form-check">
+					  <input class="form-check-input" type="radio" name="preferredContact" id="exampleRadios1" value="Email" checked>
+					  <label class="form-check-label" for="preferredContact">
+						Email
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="preferredContact" id="exampleRadios2" value="Post">
+					  <label class="form-check-label" for="preferredContact">
+						Post
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="preferredContact" id="exampleRadios2" value="Phone">
+					  <label class="form-check-label" for="preferredContact">
+						Phone
+					  </label>
+					</div>
+					
+					<div class="form-group ">
+							<label for="state">Product</label>
+							  <select id="state" class="form-control">
+								<option selected>Choose a product...</option>
+								<option>IM BASIC RESORT</option>
+								<option>GETAWAY COVID RETREAT</option>
+								<option>QUARANTINE OF A LIFETIME</option>
+								<option>PARTY NIGHT CRINGE</option>
+							  </select>
+					</div>	
+					
+					<div class="form-group ">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1">
+							<label class="form-check-label" for="gridCheck1">
+							  UNLIMITED ALCOHOL
+							</label>
+						 </div>
+						 <div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1">
+							<label class="form-check-label" for="gridCheck1">
+							  ROOM SERVICE
+							</label>
+						 </div>
+						 <div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1">
+							<label class="form-check-label" for="gridCheck1">
+							  NINETIES NIGHT NOSTALGIA
+							</label>
+						 </div>
+					</div>
+					<div class="form-group">
+						<label for="commentarea">Comment</label>
+						<textarea class="form-control" id="commentarea" rows="3"></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary mb-2">Submit</button>
+					</div>
+				</form>
+				
+				<!-- End form -->
+			</div>
+		</div>
+	</div>
+<!-- End initial content for webpage -->
+</body>
+</html>
