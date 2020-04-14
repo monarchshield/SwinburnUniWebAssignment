@@ -15,6 +15,13 @@
 	padding-bottom:3em;
 }
 
+.btn-primary {
+	color:white !important;
+}
+
+.imgnavbar {
+	width:50px;
+}
 
 /* For the heading of the products page 
    As oer my wireframes */
@@ -98,11 +105,14 @@ figure {
   Assignments specification for max marks */
 dt {
 	float: left;
+	font-size: 2em;
 }
 
 dd {
 		padding-bottom:.25em;
+		font-size: 2em;
 }
+
 
 /*I Rarely use dt/dd but i will for the sake of the assignment
 zzz */
@@ -120,6 +130,23 @@ table,th,td {
 
 th {
 	background-color: #a9a9a9;
+}
+
+/* For the purpose of the assignment ive created a aside with 25% */
+aside.content {
+	width:25%
+}
+
+/* Making the packages section look prettier*/
+section.packages {
+	text-align:right;
+	padding-top:1em;
+}
+
+/*Also required for the assignment for border color */
+.featureproductborder {
+	border-color: #1672A3;
+	border-style:solid;
 }
 
 /* Aligning text elements and adding spacing for mobile resolution */
@@ -148,6 +175,9 @@ th {
 	color: black;
 }
 
+
+
+
 /* Demonstration of pseudo element */
 .footerhyperlink {
 	color:white;
@@ -162,4 +192,8 @@ th {
 hr child class for styling */
 hr.productdivider {
 	 border: 4px solid #1672A3;
+}
+
+hr.thindivider {
+	 border: 2px solid #1672A3;
 }
