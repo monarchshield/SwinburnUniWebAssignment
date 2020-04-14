@@ -34,6 +34,8 @@ in a product container */
 	color:white;
 }
 
+/* Use this font align text, make sure the width of the table is 100% to match the bootstrap
+   parent container */
 table.university{
 	width:100%;
 	font-family: 'Afanan';
@@ -41,19 +43,28 @@ table.university{
 	text-align:center;
 }
 
+/* Cant have h2-h6 child/parent elements so this is the substitute */
 ol, ul {
 	font-size: 1.25em;
 }
 
+/* adding visibile table borders*/
 table,th,td {
 	border: 1px solid black;	
 }
 
+/* Aligning text elements and adding spacing for mobile resolution */
 .aboutmetimetable {
 	text-align:center;
 	padding-top: 1.5em;
 	padding-bottom:1.5em;
 
+}
+
+/*using this for icons in my about page to space our anchors
+  this is just a quick and nasty fix in my opinion */
+.iconpadding {
+	padding:1em;	
 }
 
 /*Font color class for when i want specific elements
