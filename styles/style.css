@@ -12,7 +12,7 @@
 /* Bootstrap doesnt pad the top and bottom of rows and containers */
 .defaultcontainer {
 	padding-top:1.5em;
-	padding-bottom:1.5em;
+	padding-bottom:3em;
 }
 
 
@@ -22,6 +22,8 @@
 	padding-top:1.5em;
 	padding-bottom:1.5em;
 	background-color: #1672A3;
+	margin-top:.5em;
+	margin-bottom:.5em
 }
 
 /*
@@ -34,6 +36,48 @@ in a product container */
 	color:white;
 }
 
+
+/* Padding for the footer container */
+.footercontainer {
+	padding-top:.5em;
+	padding-bottom:.25em;
+	text-align: center;
+}
+
+
+/* Desktop footer */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ED7F28;
+  color: white;
+  text-align: center;
+}
+
+/* Mobile resolution rule for footer otherwise the content will overlap */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+  footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ED7F28;
+  color: white;
+  text-align: center;
+}
+}
+
+
+/*Using this id image for a background i would never
+use this ordinarily as ids should be unique for the purpose
+of backend code like angular/react or jquery based component */
+#backgroundimage {
+	background-image: url('images/Backgroundimage.png');
+}
+
+
 /* Use this font align text, make sure the width of the table is 100% to match the bootstrap
    parent container */
 table.university{
@@ -43,7 +87,28 @@ table.university{
 	text-align:center;
 }
 
-/* Cant have h2-h6 child/parent elements so this is the substitute */
+/*This wont do anything because the image scales to
+	100% as per img-fluid bootstrap law  but for the 
+	sake of the assignment il add it*/
+figure {
+	float:right;
+}
+
+/*Stylistic content to be inline but still confirm to 
+  Assignments specification for max marks */
+dt {
+	float: left;
+}
+
+dd {
+		padding-bottom:.25em;
+}
+
+/*I Rarely use dt/dd but i will for the sake of the assignment
+zzz */
+
+/* Cant have h2-h6 child/parent elements so this is the substitute 
+Grouping selector*/
 ol, ul {
 	font-size: 1.25em;
 }
@@ -51,6 +116,10 @@ ol, ul {
 /* adding visibile table borders*/
 table,th,td {
 	border: 1px solid black;	
+}
+
+th {
+	background-color: #a9a9a9;
 }
 
 /* Aligning text elements and adding spacing for mobile resolution */
@@ -78,6 +147,16 @@ table,th,td {
 .fontcolorblack {
 	color: black;
 }
+
+/* Demonstration of pseudo element */
+.footerhyperlink {
+	color:white;
+}
+
+.footerhyperlink:hover {
+	color:black;
+}
+/* End pseudo element */
 
 /* for breaking up the content im creating a new
 hr child class for styling */

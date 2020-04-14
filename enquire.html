@@ -87,15 +87,18 @@
 			<div class="col-md-6">
 				
 				<!-- Form start -->
+				<!-- Eventually this will be	
+				<form action="action="https://mercury.swin.edu.au/it000000/formtest.php." method="get"> method="get" 
+				-->
 				<form>
 				  <div class="form-row">
 					<div class="col">
 					  <label for="firstname">First Name</label>
-					  <input type="text" class="form-control" id="firstname" placeholder="First name">
+					  <input type="text" class="form-control" id="firstname" placeholder="First name" maxlength="25">
 					</div>
 					<div class="col">
 					  <label for="lastname">Last Name</label>
-					  <input type="text" class="form-control" id="lastname" placeholder="Last name">
+					  <input type="text" class="form-control" id="lastname" placeholder="Last name" maxlength="25">
 					</div>
 				  </div>
 				  
@@ -105,18 +108,24 @@
 				  </div>
 				  
 				   <div class="form-group">
+				    <label for="phonenumber">Phone number</label>
+					<input type="text" class="form-control" id="phonenumber" placeholder="Phone number" maxlength="10">
+				  </div>
+				  
+				  
+				   <div class="form-group">
 					<label for="inputAddress">Address</label>
-					<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+					<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" maxlength="40">
 				  </div>
 				  
 					<div class="form-row">
 						<div class="form-group col-md-6">
 							 <label for="suburbtown">Surburb/Town</label>
-							<input type="text" class="form-control" id="suburbtown" placeholder="suburbtown">
+							<input type="text" class="form-control" id="suburbtown" placeholder="suburbtown" maxlength="20">
 						</div>
 						<div class="form-group col-md-6">
 							 <label for="postcode">Postcode</label>
-							 <input type="text" class="form-control" id="postcode" placeholder="Postcode">
+							 <input type="text" class="form-control" id="postcode" placeholder="Postcode" maxlength="4">
 						</div>
 						
 						<div class="form-group col-md-6">
@@ -197,5 +206,38 @@
 		</div>
 	</div>
 <!-- End initial content for webpage -->
+
+<!-- Start Footer -->
+<footer id="backgroundimage">
+	<div class="container footercontainer">
+		<div class="row">
+			<div class="col-md-2">
+				<h6> SS CRUISES &copy; </h6>
+			</div>
+			
+			<div class="col-md-6"> </div>
+
+			
+			<div class="col-md-1">
+				<a class="footerhyperlink" href="index.html"> <h6> HOME </h6> </a>
+			</div>
+			
+			<div class="col-md-1">
+				<a class="footerhyperlink" href="index.html">	<h6> PRODUCT </h6>  </a> 
+			</div>
+			
+			<div class="col-md-1">
+				<a class="footerhyperlink" href="index.html">	<h6> ENQUIRE </h6>  </a> 
+			</div>
+			
+			<div class="col-md-1">
+				<a class="footerhyperlink" href="index.html">	<h6> ABOUT </h6>  </a> 
+			</div>
+			
+		</div>
+	</div>
+</footer>
+<!-- End footer -->
+
 </body>
 </html>
