@@ -157,6 +157,17 @@ section.packages {
 
 }
 
+.paymentdisplay {
+	text-align: center;
+	
+	
+}
+
+.textdisplaypayment {
+	padding-bottom:1em;
+	
+} 
+
 /*using this for icons in my about page to space our anchors
   this is just a quick and nasty fix in my opinion */
 .iconpadding {
