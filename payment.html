@@ -34,7 +34,8 @@
 
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/bootstrap.css">
-	<script src="scripts/part2.js"></script>
+	
+	<script src="scripts/payment.js"></script>
 
 </head>
 
@@ -70,50 +71,137 @@
 
 <!-- Initial content for webpage -->
 	<div class="container defaultcontainer">
+		
+		<form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post" class="needs-validation" novalidate>
+			
 		<div class="row paymentdisplay">
 			<div class="col-md-3">
-				
-			</div>
-			
-			<div class="col-md-3">
 				<h3> First name </h3>
-				<h4 class="textdisplaypayment" id="firstname"> Name data </h4> 
-				
-				<h3> Email </h3>
-				<h4 class="textdisplaypayment" id="email"> Email data </h4> 
+				<input class="form-control" type="text" id="firstname" name="name" value="" readonly>
 				
 				<h3> Address </h3>
-				<h4 class="textdisplaypayment" id="address"> Address data </h4> 
-				
-				<h3> Postcode </h3>
-				<h4 class="textdisplaypayment" id="postcode"> Address data </h4>
-
-				<h3> Contact preference </h3>
-				<h4 class="textdisplaypayment" id="contactpref" > Contact data </h4> 
+				<!-- <h4 class="textdisplaypayment" id="address"> Address data </h4> -->
+				<input class="form-control" type="text" id="address" name="address" value="Address" readonly>
 				
 				<h3> Comment </h3>
-				<h4 class="textdisplaypayment" id="commentarea"> Comment data </h4> 
+				<!-- <h4 class="textdisplaypayment" id="commentarea"> Comment data </h4> -->
+				<input class="form-control" type="text" id="commentarea" name="comment" value="Comment" readonly>
 				
 			</div>
 			
 			<div class="col-md-3">
+				
 				<h3> Last name </h3>
-				<h4 class="textdisplaypayment" id="lastname"> Name data </h4> 
+				<!-- <h4 class="textdisplaypayment" id="lastname"> Name data </h4> -->
+				<input class="form-control" type="text" id="lastname" name="lastname"  readonly>
+				
+			
+				<h3> Postcode </h3>
+				<!-- <h4 class="textdisplaypayment" id="postcode"> Address data </h4> -->
+				<input class="form-control" type="text" id="postcode" name="postcode" value="postcode" readonly>
+					
+				<h3> State </h3>
+				<!-- <h4 class="textdisplaypayment" id="state"> State data </h4>  -->
+				<input class="form-control" type="text" id="state" name="state" value="state" readonly>
+			</div>
+			
+			<div class="col-md-3">
 				
 				<h3> Phone number </h3>
-				<h4 class="textdisplaypayment" id="phonenumber"> Phone data </h4> 
+				<!-- <h4 class="textdisplaypayment" id="phonenumber"> Phone data </h4>  -->
+				<input class="form-control" type="text" id="phonenumber" name="phonenumber" value="" readonly>
+				
 				
 				<h3> Surburb </h3>
-				<h4 class="textdisplaypayment" id="surburb"> Surburb data </h4> 
-				
-				<h3> State </h3>
-				<h4 class="textdisplaypayment" id="state"> State data </h4> 
+				<!-- <h4 class="textdisplaypayment" id="surburb"> Surburb data </h4> -->
+				<input class="form-control" type="text" id="surburb" name="suburb" value="state" readonly>
 			</div>
 			
 			<div class="col-md-3">
+				<h3> Email </h3>
+				<!-- <h4 class="textdisplaypayment" id="email"> Email data </h4> -->
+				<input class="form-control" type="text" id="email" name="email" value="email" readonly>
+				
+				
+				<h3> Contact preference </h3>
+				<!--<h4 class="textdisplaypayment" id="state" > Contact data </h4>  -->
+				<input class="form-control" type="text" id="contactpref" name="contactpref" value="state" readonly>
 				
 			</div>
+	
+			<div class="col-md-12"> 		
+					<div class="form-row">
+						
+						<div class="form-group col-md-4">
+							<label for="Creditcard">Credit card type</label>
+								  <select id="creditcardtype" class="form-control"  required>
+									<option></option>
+									<option>VISA</option>
+									<option>MASTERCARD</option>
+									<option>AMERICAN EXPRESS</option>
+								  </select>
+						</div>
+						
+						<div class="form-group col-md-8">
+							<label for="suburbtown">Credit card Name</label>
+							<input type="text" class="form-control" id="creditcardname" name="creditcardname" pattern="[A-Za-z ]{3,40}" placeholder="Credit card name" maxlength="40"  required>
+						</div>
+					</div>
+					
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="suburbtown">Credit card Number</label>
+							<input type="number" class="form-control" id="creditcardnumber" name="creditcardnumber"  placeholder="Credit card number" min="111111111111111" max="9999999999999999"  required>
+						
+						</div>
+						
+							<div class="form-group col-md-4">
+							<label for="suburbtown">Expiry date</label>
+						
+							
+							<input class="form-control" name="expiry"  placeholder="Expiry date" id="expirydate" type="month" required>
+						</div>
+						
+							<div class="form-group col-md-2">
+							<label for="suburbtown">CVV</label>
+							<input type="text" class="form-control" id="cvv" name="cvv"  pattern="\d*" maxlength="4" placeholder="CVV"  required>
+						</div>
+					</div>
+					
+					<div class="form-row">
+						<div class="form-group col-md-3"> 
+							<button class="btn btn-primary is-valid commitpaymentbtn"  type="submit" value="submit"> Purchase </button>
+						</div>
+						
+						<div class="col-md-3"> 
+							<h5> Product Name </h5>
+							<h5 id="PackageName"> Product Name </h5>
+					
+						</div>
+						
+							<div class="col-md-3"> 
+							
+							<h5> Product Quantity </h5>
+							<h5 id="PackageQuantity"> Product Name </h5>
+
+						</div>
+						
+							<div class="col-md-3"> 
+						
+							<h5> Total Price </h5>
+							<h5 id="Totalprice"> Product Name </h5>
+						</div>
+						
+					</div>
+				</form>
+				
+				<a class="btn btn-primary btnfloatleft" onClick="window.localStorage.clear();" href="index.html"> Cancel </a>
+			</div>
+			
+			
+		
 		</div>
+		
 	</div>
 <!-- End initial content for webpage -->
 

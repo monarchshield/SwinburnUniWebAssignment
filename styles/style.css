@@ -23,6 +23,16 @@
 	width:50px;
 }
 
+
+.btnfloatleft {
+ float:left;
+}
+
+.readonlyformfield {
+	background-color:transparent;
+	border: 0em;
+}
+
 /* For the heading of the products page 
    As oer my wireframes */
 .productheadcontainer {
@@ -41,6 +51,10 @@ in a product container */
 	padding-top: 1.5em;
 	padding-bottom:1.5em;
 	color:white;
+}
+
+.commitpaymentbtn {
+ float:left;
 }
 
 

@@ -134,48 +134,52 @@
 						
 						<div class="form-group col-md-6">
 							<label for="state">State</label>
-							  <select id="state" class="form-control">
-								<option selected>Choose...</option>
+							  <select id="state" class="form-control" required>
+								<option></option>
 								<option>VIC</option>
 								<option>NSW</option>
 								<option>QLD</option>
 								<option>NT</option>
 								<option>SA</option>
 								<option>WA</option>
+								<option>TAS</option>
+								<option>ACT</option>
 							  </select>
 						</div>	
 					</div>
 					
-					<h4> Preferred contact </h4>
-					 <div class="form-check">
-					  <input class="form-check-input" type="radio" name="preferredContact" id="emailcontact" value="Email">
-					  <label class="form-check-label" for="emailcontact">
-						Email
-					  </label>
-					</div>
-					<div class="form-check">
-					  <input class="form-check-input" type="radio" name="preferredContact" id="postcontact" value="Post">
-					  <label class="form-check-label" for="postcontact">
-						Post
-					  </label>
-					</div>
-					<div class="form-check">
-					  <input class="form-check-input" type="radio" name="preferredContact" id="phonecontact" value="Phone">
-					  <label class="form-check-label" for="phonecontact">
-						Phone
-					  </label>
+					
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="state">Preferred contact</label>
+							  <select id="prefferedcontact" class="form-control" required>
+								<option></option>
+								<option>EMAIL</option>
+								<option>POST</option>
+								<option>PHONE</option>
+							
+							  </select>
+						</div>	
 					</div>
 					
-					<div class="form-group ">
+					<div class="form-row">
+					<div class="form-group col-md-8">
 							<label for="state">Product</label>
-							  <select id="package" class="form-control">
-								<option selected>Choose a product...</option>
-								<option>IM BASIC RESORT</option>
-								<option>GETAWAY COVID RETREAT</option>
-								<option>QUARANTINE OF A LIFETIME</option>
-								<option>PARTY NIGHT CRINGE</option>
+							  <select id="package" class="form-control" required>
+								<option></option>
+								<option>IM BASIC RESORT $1028</option>
+								<option>GETAWAY COVID RETREAT $2350</option>
+								<option>QUARANTINE OF A LIFETIME $6480</option>
+								<option>PARTY NIGHT CRINGE $4325</option>
 							  </select>
 					</div>	
+					
+					<div class="form-group col-md-4">
+						<label for="inputAddress">Quantity</label>
+						<input type="number" min="1" class="form-control" id="productquantity" placeholder="How many people?" maxlength="40" value="head count"required>
+				 
+					</div>	
+					</div>
 					
 					<div class="form-group ">
 						<div class="form-check">
